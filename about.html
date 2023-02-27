@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>CSS Website Layout</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+}
+
+/* Style the header */
+.header {
+  background-color: grey;
+  padding: 20px;
+  text-align: center;
+}
+
+/* Style the top navigation bar */
+.topnav {
+  overflow: hidden;
+  background-color:red;
+}
+
+/* Style the topnav links */
+.topnav a {
+  float: left;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+/* Change color on hover */
+.topnav a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+/* Create three equal columns that floats next to each other */
+.column {
+  float: left;
+  width: 33.33%;
+  padding: 15px;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Responsive layout - makes the three columns stack on top of each other instead of next to each other */
+@media screen and (max-width:600px) {
+  .column {
+    width: 100%;
+  }
+}
+</style>
+</head>
+<body>
+
+<div class="header">
+  <h1><font color="white">Introduction:</font></h1>
+  <p><b><font color="black" size="4">Here are some of the necessary informations which will be required for the viewers..</b></font></p>
+</div>
+
+<div class="topnav">
+  <a href="file:///F:/anit%20file/my%20projects/html/website/website%20nw.html#">Home page</a>
+  <a href="#">Contact</a>
+  <a href="file:///F:/anit%20file/my%20projects/html/website/sign%20up.html">Sign Up</a>
+</div>
+
+<div class="row">
+  <div class="column">
+    <h2>CA LX:</h2>
+    <p><h3><font color="purple">Laxman Shrestha,accountant teacher from profession is a hard working,delicated and honest person who performs his duty very well... He has been in teaching profession since approxiimately 5 years. He teaches in Kastamandup College in Kalainki and another one college.. He also takes some tution classes and is the best and most liked teacher of every students where he teaches..</font></h3></p>
+  </div>
+  
+  <div class="column">
+    <h2>MY Hobbies:</h2>
+   <font color="blue" size="6"> <Ul>
+<li>Teaching</li>
+<li>Dancing</li>
+<li>Reading books</li>
+<li>Listing News</li>
+    </ul></font>
+  </div>
+  
+  <div class="column">
+    <h2>Teaching Environment</h2>
+    <p><h3><font color="green">Students are provided with eco-friendly environment to gain knowladge in our Institude.. They can study account subject of any grade with low cost..</font></h3></p>
+  </div>
+</div>
+
+<a href="file:///F:/anit%20file/my%20projects/html/website/LX%20institude.html">Back..</a>
+
+</body>
+</html>
+
+

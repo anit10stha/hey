@@ -1,0 +1,65 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+*{
+	margin: 0px;
+	padding: 0px;
+	box-sizing: border-box;
+}
+body{
+	width:100%;
+	min-height:100vh;
+	background-color: #1a1f39;
+	display:flex;
+	justify-content:center;
+	align-items:center;
+}
+nav{
+	position: relative;
+	background-color: #232a50;
+	width:500px;
+	height:50px;
+	border-radius:10px;
+	overflow:hidden;
+	z-index: 1;
+}
+nav ul{
+	list-style-type:none;
+	line-height: 50px;
+}
+nav ul li{
+	width: 100px;
+	float: left;
+	text-align: center;
+	cursor: pointer;
+}
+nav ul li a{
+	text-decoration:none;
+	color: #fff;
+	font-size: 18px;
+	font-family: 'Roboto', sans-serif;
+}
+nav ul li.back-list{
+	position: absolute;
+	background-color: #16a085;
+	width: 100px;
+	height: 100%;	
+	left: 0px;
+	bottom: 0px;
+	z-index: -1;
+	transition: .5s ease-in;
+}
+nav ul li:first-of-type:hover ~ .back-list{
+	left: 0px;
+}
+nav ul li:nth-of-type(2):hover ~ .back-list{
+	left: 100px;
+}
+nav ul li:nth-of-type(3):hover ~ .back-list{
+	left: 200px;
+}
+nav ul li:nth-of-type(4):hover ~ .back-list{
+	left: 300px;
+}
+nav ul li:nth-of-type(5):hover ~ .back-list{
+	left: 400px;
+}
